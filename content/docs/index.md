@@ -1,10 +1,26 @@
 ---
 title: Welcome
-description: Welcome to my personal knowledge base.
+description: Welcome to my notes
 tags:
-    - test
+  - test
 ---
 
 # Welcome
 
-This documentation site is published from my Obsidian vault.
+现在无论是网络上的文章，公众号，甚至和同事的交流都是一股A味儿。每天大量阅读AI生产出来的文字，感觉脑袋空空还很焦虑。
+
+比起被AI取代掉工作，更担心AI对文化与文明的冲击。
+
+很怀念之前被文字和语言背后的思想所触动的时候。LLM在加速削弱字里行间藏着的温度和力量。
+
+LLM没有脑子，没有思考能力，一切无非是靠大量已知数据堆出来的统计学结果。人类的脑子就在被动的不断被规训处理LLM大量生产出的probability distribution on next "correct" token over text。生产出的信息都是基于已有信息，垃圾生产出垃圾，人类的知识库开始疯狂扩容的同时停止更新。不知道是AGI先模拟出人类的认知，还是人类的大脑先被驯化成废肉。
+
+我们真的需要那么多信息吗？哪怕以信息背后真正的价值和力量为代价？
+
+有什么任务，打开AI tool似乎是一个通往目标的快速捷径。可是我不想大脑逐渐懒惰化，我不想失去独立思考表达的能力。
+
+工作中AI确实是个好帮手，我反对用AI与人交流，但支持用AI辅助工作。利用资本主义官僚主义的屎山向资本主义拉屎是我对万恶资本主义官僚主义的抵抗。
+
+我一直很喜欢写作，也曾犹豫过是否要把自己的想法公开表达出来。但希望能在这里持续创作一些微小却原创的内容，为文化的发展贡献一点微薄的力量。
+
+感谢阅读。请不要把我的脑子喂给LLM。
