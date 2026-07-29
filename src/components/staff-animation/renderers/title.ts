@@ -1,4 +1,4 @@
-import { W, TITLE_Y, SUB_Y } from '../config';
+import { W, TITLE_Y, SUB_Y, STAFF_X0, STAFF_X1 } from '../config';
 import { ramp } from '../math';
 import type { InputState } from '../types';
 
@@ -39,6 +39,21 @@ export function drawTitle(ctx: CanvasRenderingContext2D, t: number, input: Input
     ctx.textAlign = 'center';
     ctx.fillStyle = `rgba(26, 23, 18, ${0.88 * ap2})`;
     ctx.fillText('can we really control our life?', W / 2, SUB_Y);
+  }
+
+  // Tempo and composer markings
+  const ap3 = ramp(1.0, 1.3, t);
+  if (ap3 > 0) {
+    const markY = 245;
+    ctx.fillStyle = `rgba(26, 23, 18, ${0.9 * ap3})`;
+    ctx.textAlign = 'left';
+    ctx.font = 'italic bold 14px "Times New Roman", serif';
+    ctx.fillText('Tempo Rubato', STAFF_X0, markY);
+    ctx.textAlign = 'right';
+    ctx.font = '13px "Times New Roman", serif';
+    ctx.fillText('Melody Ma', STAFF_X1, markY);
+    ctx.font = '12px "Times New Roman", serif';
+    ctx.fillText('(2001 – )', STAFF_X1, markY + 16);
   }
 
   ctx.restore();
