@@ -43,9 +43,9 @@
 .heroArt .imageButton { padding: 0; background: transparent; }
 .articleBody { border-top: 1px solid var(--rule); padding-top: 32px; }
 .readingLayout { width: min(100% - 112px, 1280px); margin: auto; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: clamp(36px, 4vw, 64px); }
-.contents { position: sticky; top: 35px; align-self: start; padding-top: 12px; }
+.contents { position: sticky; top: 35px; align-self: start; min-width: 0; max-width: 100%; padding-top: 12px; }
 .contents p { color: var(--muted); font-size: 12px; letter-spacing: .13em; margin-bottom: 22px; }
-.contents a { display: block; font-family: var(--serif); font-size: 15px; line-height: 1.8; margin-bottom: 18px; white-space: nowrap; }
+.contents a { display: block; min-width: 0; max-width: 100%; font-family: var(--serif); font-size: 15px; line-height: 1.8; margin-bottom: 18px; white-space: normal; overflow-wrap: anywhere; }
 .contents a:hover { color: var(--accent); }
 .contents .backLink { margin-top: 40px; font-family: inherit; font-size: 13px; color: var(--muted); }
 .articleContent { min-width: 0; }
