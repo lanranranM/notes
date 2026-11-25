@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import styles from './SiteChrome.module.css';
 
-type Section = 'home' | 'notes' | 'artwork' | 'projects' | 'about';
+type Section = 'home' | 'notes' | 'artwork' | 'museum' | 'projects' | 'about';
 
 const sections: { key: Section; label: string; href: string }[] = [
   { key: 'home', label: 'Home', href: '/' },
   { key: 'notes', label: 'Notes', href: '/docs' },
   { key: 'artwork', label: 'Artwork', href: '/artwork' },
+  { key: 'museum', label: 'Art Museum', href: '/art-museum' },
   { key: 'projects', label: 'Projects', href: '/projects' },
   { key: 'about', label: 'About Me', href: '/about' },
 ];

@@ -10,6 +10,7 @@ export function baseOptions(): BaseLayoutProps {
     links: [
       { text: 'Home', url: '/' },
       { text: 'Artwork', url: '/artwork' },
+      { text: 'Art Museum', url: '/art-museum' },
       { text: 'Projects', url: '/projects' },
       { text: 'About Me', url: '/about' },
     ],

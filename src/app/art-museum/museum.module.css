@@ -1,0 +1,160 @@
+.page {
+  --ink: #211f20;
+  --accent: #e95043;
+  --muted: #706c66;
+  --rule: #d8d3ca;
+  --serif: 'Songti SC', 'Noto Serif CJK SC', 'STSong', 'SimSun', Georgia, serif;
+  min-height: 100vh;
+  color: var(--ink);
+  background: #fcfbf8;
+}
+.page a { color: inherit; text-decoration: none; }
+.page a:focus-visible, .page button:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
+.eyebrow { font-size: 13px; letter-spacing: .16em; line-height: 1.8; font-weight: 400; }
+.collection { width: min(100% - 112px, 1280px); margin: auto; }
+.collectionHeader { padding: 76px 0 84px; }
+.collectionHeader h1 { margin: 14px 0 24px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(52px, 7.8vw, 112px); font-weight: 400; letter-spacing: -.045em; line-height: 1.15; }
+.collectionHeader h1 span, .featureCopy h2 span { color: var(--accent); }
+.collectionIntro { font-family: var(--serif); font-size: 21px; line-height: 1.9; color: #58534d; }
+.collectionLabel { padding: 20px 0; border-top: 1px solid var(--ink); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.collectionLabel h2 { font-size: 16px; font-weight: 400; }
+.collectionLabel > span { font-size: 12px; letter-spacing: .12em; }
+.feature { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(40px, 6vw, 110px); padding: 24px 0 70px; align-items: center; }
+.featureImage { background: #e6e2da; padding: 18px; }
+.featureImage img { width: 100%; height: auto; display: block; }
+.featureCopy h2 { margin: 30px 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(32px, 4vw, 60px); font-weight: 400; line-height: 1.1; letter-spacing: -.055em; white-space: nowrap; }
+.featureCopy h2 em { font-weight: 400; }
+.featureSubtitle { font-family: var(--serif); font-size: 25px; line-height: 1.6; }
+.featureDescription { max-width: 390px; margin: 24px 0; font-family: var(--serif); font-size: 17px; line-height: 2; color: #625c56; }
+.readLink { display: inline-block; margin: 10px 0 35px; padding-bottom: 7px; border-bottom: 1px solid var(--ink); font-size: 15px; }
+.feature:hover .readLink { color: var(--accent); border-color: var(--accent); }
+.featureDate { display: block; color: var(--muted); font-size: 13px; letter-spacing: .08em; }
+.collectionEnd { margin: 10px 0 100px; padding-top: 34px; border-top: 1px solid var(--rule); font-family: var(--serif); font-size: 18px; color: var(--muted); }
+.articleHeader { width: min(100% - 112px, 1280px); margin: auto; padding: 20px 0 40px; }
+.breadcrumb { display: inline-block; font-size: 14px; color: var(--muted) !important; margin-bottom: 48px; border-bottom: 1px solid var(--rule); padding-bottom: 5px; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); align-items: center; gap: clamp(36px, 4.5vw, 72px); }
+.heroTitle { margin: 26px 0 25px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(38px, 5.2vw, 78px); font-weight: 400; line-height: 1.1; letter-spacing: -.055em; white-space: nowrap; }
+.heroTitle em { font-weight: 400; }
+.heroTitle span { color: var(--accent); }
+.subtitle { font-family: var(--serif); font-size: clamp(22px, 2.1vw, 30px); line-height: 1.6; margin: 0 0 34px; }
+.metadata { display: flex; flex-wrap: wrap; gap: 10px 20px; font-size: 13px; color: var(--muted); letter-spacing: .035em; }
+.heroNote { margin-top: 42px; padding-left: 22px; border-left: 2px solid var(--accent); max-width: 470px; font-family: var(--serif); font-size: 18px; line-height: 1.95; color: #625c56; }
+.heroArt { width: 100%; max-width: 485px; justify-self: end; }
+.heroArt .imageButton { padding: 0; background: transparent; }
+.articleBody { border-top: 1px solid var(--rule); padding-top: 32px; }
+.readingLayout { width: min(100% - 112px, 1280px); margin: auto; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: clamp(36px, 4vw, 64px); }
+.contents { position: sticky; top: 35px; align-self: start; padding-top: 12px; }
+.contents p { color: var(--muted); font-size: 12px; letter-spacing: .13em; margin-bottom: 22px; }
+.contents a { display: block; font-family: var(--serif); font-size: 15px; line-height: 1.8; margin-bottom: 18px; white-space: nowrap; }
+.contents a:hover { color: var(--accent); }
+.contents .backLink { margin-top: 40px; font-family: inherit; font-size: 13px; color: var(--muted); }
+.articleContent { min-width: 0; }
+.prose { width: 100%; margin: 0; font-family: var(--serif); font-size: 19px; line-height: 1.95; letter-spacing: .018em; text-wrap: pretty; }
+.prose p { margin: 0 0 18px; }
+.intro { padding: 0 0 8px; }
+.chapter { scroll-margin-top: 28px; padding: 28px 0 8px; }
+.chapter h2 { margin: 0 0 31px; font-family: var(--serif); font-size: clamp(29px, 3vw, 39px); font-weight: 400; line-height: 1.5; letter-spacing: .02em; }
+.chapter h2::before { content: ''; display: block; height: 2px; width: 30px; background: var(--accent); margin-bottom: 26px; }
+.gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; align-items: start; margin: 24px 0 30px; }
+.gallery .imageButton { padding: 0; background: transparent; }
+.gallery .imageButton img { width: 100%; height: auto; }
+/* Columns follow the original image ratios, so each row has level image edges
+   without cropping the artworks or adding letterboxing. */
+.trio { grid-template-columns: minmax(0, 1fr) minmax(0, .806fr) minmax(0, .93677fr); }
+.editorialGallery { grid-template-columns: minmax(0, .85857fr) minmax(0, .78333fr); }
+.editorialGallery .figure:first-child { grid-column: 1 / -1; width: 100%; }
+.colourFirst { grid-template-columns: minmax(0, 1fr) minmax(0, .67333fr); margin-bottom: 20px; }
+.colourSecond { grid-template-columns: minmax(0, .80778fr) minmax(0, .83778fr); margin-top: 0; }
+.portraitMosaic { display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 12px; aspect-ratio: 3 / 2; margin: 24px 0 30px; }
+.portraitMosaic > .figure:first-child { grid-row: 1 / 3; }
+.portraitMosaic > .figure { position: relative; min-height: 0; }
+.portraitMosaic .imageButton { height: 100%; }
+.portraitMosaic .imageButton img { width: 100%; height: 100%; object-fit: cover; }
+.portraitMosaic figcaption { position: absolute; bottom: 0; left: 0; right: 0; margin: 0; padding: 24px 12px 10px; color: #fff; background: linear-gradient(transparent, #000b); pointer-events: none; font-size: 13px; }
+.portraitMosaic .zoomHint { bottom: auto; top: 10px; }
+.kazanStudy { width: 100%; margin: 28px 0; }
+.kazanStudy .prose p { margin-bottom: 0; }
+.kazanGallery { grid-template-columns: minmax(0, .848889fr) minmax(0, 1.580334fr); margin: 20px 0 0; column-gap: 20px; }
+.kazanGallery figcaption { padding-top: 10px; border-top: 1px solid var(--rule); margin-top: 10px; }
+.figure { margin: 0; min-width: 0; }
+.imageButton { position: relative; display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+.imageButton img { display: block; width: 100%; height: auto; }
+.figure figcaption { margin-top: 8px; font-family: var(--serif); font-size: 14px; line-height: 1.6; color: #726b63; text-wrap: pretty; }
+.portraitMosaic .figure figcaption { margin-top: 0; color: #fff; font-size: 13px; }
+.zoomHint { position: absolute; right: 12px; bottom: 12px; background: #fcfbf8eb; color: #211f20; padding: 6px 10px; font-size: 12px; opacity: 0; transition: opacity .2s; }
+.imageButton:hover .zoomHint, .imageButton:focus-visible .zoomHint { opacity: 1; }
+.darkStudy { margin: 28px 0; padding: 24px 20px 4px; background: #292b28; color: #f5f1e8; }
+.darkStudy h3 { font-family: var(--serif); font-size: 24px; font-weight: 400; }
+.darkStudy > p { margin-top: 10px; font-size: 13px; color: #cac6bd; }
+.darkStudy .gallery { margin: 20px 0; gap: 20px 16px; }
+.darkStudy .imageButton { background: transparent; padding: 0; }
+.darkStudy .figure figcaption { color: #d0c9be; }
+.ending { border-top: 1px solid var(--rule); margin-top: 20px; padding: 28px 0 32px; }
+.ending .prose { font-size: 18px; line-height: 1.85; }
+.ending > .figure { width: min(100%, 380px, 40svh); margin: 20px auto 0; }
+.ending .imageButton { padding: 0; background: transparent; }
+.ending figcaption { text-align: center; }
+.signature { margin-top: 14px !important; color: var(--muted); font-size: 14px; text-align: right; }
+.captionTitle { display: block; }
+.captionYear { white-space: nowrap; font-family: Georgia, serif; margin-left: .7em; }
+.captionRussian { display: block; font-family: Georgia, 'Times New Roman', serif; font-size: 12px; line-height: 1.45; margin-top: 3px; opacity: .85; overflow-wrap: anywhere; }
+.lightboxCaption { text-align: center; max-width: 800px; flex-shrink: 0; }
+.lightboxCaption small, .lightboxCaption a { display: block; margin-top: 7px; font-size: 12px; color: #d6d1c8; }
+.lightboxCaption a { text-decoration: underline; }
+.captionNote { font-size: 13px; line-height: 1.7; color: var(--muted); margin: 12px 0 18px; }
+.articleEnd { border-top: 1px solid var(--rule); padding: 25px 0 70px; font-size: 14px; }
+.articleEnd a { border-bottom: 1px solid var(--ink); padding-bottom: 6px; }
+.lightbox { position: fixed; inset: 0; width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; padding: 64px 24px 24px; margin: 0; border: 0; background: #171916f5; color: white; }
+.lightbox[open] { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; }
+.lightbox::backdrop { background: #171916; }
+.lightboxImage { display: block; width: auto; max-width: 100%; height: auto; max-height: calc(100dvh - 235px); object-fit: contain; min-height: 0; }
+.lightbox p { font-family: var(--serif); font-size: 16px; line-height: 1.5; text-align: center; }
+.closeButton { position: absolute; top: 20px; right: 26px; padding: 8px 14px; color: white; background: transparent; border: 1px solid #777; cursor: pointer; font-size: 15px; }
+@media (max-width: 1000px) {
+  .readingLayout { grid-template-columns: 1fr; }
+  .contents { position: static; display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 24px; border-bottom: 1px solid var(--rule); padding: 0 0 22px; }
+  .contents p, .contents a { margin: 0; }
+  .contents .backLink { display: none; }
+  .heroNote { margin-top: 30px; }
+}
+@media (max-width: 760px) {
+  .collection, .articleHeader, .readingLayout { width: calc(100% - 48px); }
+  .collectionHeader { padding: 46px 0 55px; }
+  .collectionHeader h1 { font-size: clamp(45px, 10vw, 70px); }
+  .feature, .hero { grid-template-columns: 1fr; gap: 38px; }
+  .featureCopy h2 { font-size: clamp(32px, 8vw, 60px); }
+  .featureImage { padding: 12px; }
+  .collectionLabel > span { font-size: 11px; }
+  .articleHeader { padding-top: 20px; padding-bottom: 46px; }
+  .breadcrumb { margin-bottom: 35px; }
+  .heroTitle { font-size: clamp(32px, 9vw, 64px); }
+  .heroNote { display: block; margin-top: 28px; font-size: 17px; }
+  .heroArt { max-width: 540px; justify-self: center; }
+  .articleBody { padding-top: 28px; }
+  .readingLayout { gap: 34px; }
+  .contents { gap: 12px 18px; }
+  .contents p { width: 100%; }
+  .contents a { font-size: 14px; }
+  .prose { font-size: 18px; line-height: 2; }
+  .intro { padding-bottom: 0; }
+  .chapter { padding-top: 26px; }
+  .gallery, .trio { gap: 18px 12px; }
+  .trio { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .trio .figure:first-child { grid-column: 1 / -1; width: 100%; }
+  .trio { grid-template-columns: minmax(0, .806fr) minmax(0, .93677fr); }
+  .editorialGallery .figure:first-child { width: 100%; }
+  .gallery .imageButton { padding: 0; }
+  .portraitMosaic { gap: 8px; }
+  .portraitMosaic .figure figcaption { padding: 18px 7px 6px; font-size: 12px; line-height: 1.35; }
+  .kazanGallery { column-gap: 12px; }
+  .darkStudy { padding: 20px 12px 4px; }
+  .ending { padding-top: 28px; }
+  .ending > .figure { width: min(100%, 320px, 34svh); margin: 18px auto 0; }
+  .figure figcaption { font-size: 13px; }
+}
+@media (max-width: 480px) {
+  .portraitMosaic { aspect-ratio: auto; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; }
+  .portraitMosaic > .figure:first-child { grid-column: 1 / -1; grid-row: auto; }
+  .portraitMosaic .imageButton { aspect-ratio: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .zoomHint { transition: none; } }
